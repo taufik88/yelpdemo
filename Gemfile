@@ -5,6 +5,8 @@ ruby '2.1.4'
 gem 'rails', '4.2.3'
 # Use postgresql as the database for Active Record
 
+gem 'sqlite3', group: :development
+
 group :production do
   gem 'pg', '0.15.1'
   gem 'rails_12factor'
@@ -35,6 +37,9 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'puma'
+
+gem 'carrierwave'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
